@@ -10,4 +10,13 @@ let users =[
     {name:'olya', username:'olyamnb', password:66666},
     {name:'sergiy', username:'sergiy678', password:67812},
 ];
-console.log(users);
+console.log(users[0].password);
+console.log(users[1].password);
+console.log(users[2].password);
+console.log(users[3].password);
+console.log(users[4].password);
+console.log(users[5].password);
+console.log(users[6].password);
+console.log(users[7].password);
+console.log(users[8].password);
+console.log(users[9].password);
