@@ -1,3 +1,4 @@
+
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
@@ -7,11 +8,7 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-let a = 'Java Complex';
-console.log('Супер');
-
-let b = 'Python Complex';
-console.log('Супер');
-
-let c = 'FullStack';
-console.log('Супер');
+let monthDuration =   5;
+if (monthDuration < 6){
+    console.log('Супер');
+}
