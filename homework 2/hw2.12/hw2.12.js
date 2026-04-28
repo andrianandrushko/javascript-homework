@@ -8,7 +8,8 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-let monthDuration =   4;
-if (monthDuration < 5){
-    console.log('Супер');
+for (let course of coursesAndDurationArray) {
+    if (course.monthDuration > 5) {
+        console.log('Супер');
+    }
 }
