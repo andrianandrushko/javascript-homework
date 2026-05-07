@@ -38,3 +38,5 @@ let mapedcoursesAndDurationArray = coursesAndDurationArray.map(function (value, 
     return newcoursesAndDurationArray;
 });
 console.log(mapedcoursesAndDurationArray);
+
+
