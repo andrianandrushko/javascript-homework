@@ -1,23 +1,22 @@
-let reduce = arr.reduce((accumulator, user) => {
+let arr = [
+    {cardSuit: 'spade', value: '6'},
+    {cardSuit: 'diamond', value: '7'},
+    {cardSuit: 'heart', value: '8'},
+    {cardSuit: 'clubs', value: '9'},
+    {cardSuit: 'spade', value: '10'}
+];
 
-    if (user.cardSuit === 'spade') {
-        accumulator.spades.push(user);
-    }
+let result = arr.reduce((acc, card) => {
 
-    if (user.cardSuit === 'diamond') {
-        accumulator.diamond.push(user);
-    }
+    acc[card.cardSuit].push(card);
 
-    if (user.cardSuit === 'heart') {
-        accumulator.heart.push(user);
-    }
+    return acc;
 
-    if (user.cardSuit === 'clubs') {
-        accumulator.club.push(user);
-    }
+}, {
+    spade: [],
+    diamond: [],
+    heart: [],
+    clubs: []
+});
 
-    return accumulator;
-
-}, {spades: [], diamond: [], heart: [], club: []});
-
-console.log(reduce);
+console.log(result);
