@@ -17,21 +17,12 @@ for (let suit of cards.cardSuit) {
 console.log(arr);
 
 
-let filtercards = arr.filter(card => card.value === 'ace');
-console.log(filtercards);
+console.log(arr.filter(card => card.value === 'ace'));
 
+console.log(arr.filter(card => card.value === '6'));
 
-let filtercards = arr.filter(card => card.value.includes('6'));
-console.log(filtercards);
+console.log(arr.filter(card => card.color === 'red'));
 
+console.log(arr.filter(card => card.cardSuit === 'diamond'));
 
-let filtercards = arr.filter(card => card.color === 'red');
-console.log(filtercards);
-
-
-let filtercards = arr.filter(card => card.cardSuit  === 'diamond');
-console.log(filtercards);
-
-
-let filtercards = arr.filter(card => card.value >= 9 && card.value < 10);
-console.log(filtercards);
+console.log(arr.filter(card => card.value === '9'));
