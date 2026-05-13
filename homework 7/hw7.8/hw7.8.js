@@ -1,5 +1,4 @@
 class Cinderella {
-
     constructor(id, age, Footsize) {
         this.id = id;
         this.age = age;
@@ -8,13 +7,16 @@ class Cinderella {
 }
 
 class Prince {
-
     constructor(id, age, slipper) {
         this.id = id;
         this.age = age;
         this.slipper = slipper;
     }
 }
+let Princes = [
+    new Prince(1, 21, 40)
+];
+console.log(Princes);
 
 
 
@@ -33,13 +35,13 @@ let cinderellas = [
 console.log(cinderellas);
 
 for (const cinderella of cinderellas){
-    if (cinderella.Footsize === Prince.slipper){
+    if (cinderella.footsize === Prince.slipper){
         Prince.girl = cinderella;
     }
 }
 
 let chosenCinderella = cinderellas.find(cinderella =>
-    cinderella.footSize === Prince.slipper
+    cinderella.footsize === Prince.slipper
 );
 
 console.log(chosenCinderella);
